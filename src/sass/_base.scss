@@ -1,4 +1,25 @@
-// test
-body {
-  background-color: yellow;
+@use 'variables' as vars;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.roboto-400 {
+  font-family: vars.$font-main;
+  font-weight: vars.$font-weight-400;
+  font-style: normal;
+}
+
+.roboto-700 {
+  font-family: vars.$font-main;
+  font-weight: vars.$font-weight-700;
+  font-style: normal;
 }
