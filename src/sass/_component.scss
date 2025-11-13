@@ -16,6 +16,7 @@ body {
 .wrapper {
   background-color: vars.$white;
   max-width: 904px;
+  // display: none; // when valid is true
 
   @include mix.tablet {
     padding: vars.$spacing-40;
@@ -123,5 +124,43 @@ body {
     font-weight: vars.$font-weight-700;
     border-radius: vars.$spacing-8;
     width: 100%;
+  }
+}
+
+// success message
+
+.success__message {
+  display: none;
+  max-width: 504px;
+  background-color: vars.$white;
+  height: 100vh;
+  padding: vars.$spacing-100 vars.$spacing-24;
+
+  @include mix.tablet {
+    height: 520px;
+    padding: vars.$spacing-64;
+    border-radius: vars.$radius-36;
+  }
+
+  &-title {
+    font-size: vars.$size-40;
+    margin: vars.$spacing-24 0;
+  }
+  &-text {
+    line-height: vars.$line-height-large;
+  }
+  .success__message-btn {
+    color: vars.$white;
+    background-color: red;
+    width: 100%;
+    padding: 16px;
+    border-radius: vars.$radius-8;
+    background-color: vars.$blue-800;
+    line-height: vars.$line-height-large;
+    margin-top: vars.$spacing-100;
+
+    @include mix.tablet {
+      margin-top: vars.$spacing-32;
+    }
   }
 }
