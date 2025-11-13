@@ -10,16 +10,14 @@
 
 html {
   font-size: 16px;
-}
-
-.roboto-400 {
   font-family: vars.$font-main;
   font-weight: vars.$font-weight-400;
-  font-style: normal;
+  color: vars.$blue-800;
+}
+li {
+  list-style-type: none;
 }
 
-.roboto-700 {
-  font-family: vars.$font-main;
+.text-bold {
   font-weight: vars.$font-weight-700;
-  font-style: normal;
 }

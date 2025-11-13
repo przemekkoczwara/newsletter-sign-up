@@ -15,12 +15,24 @@
   <body>
     <main class="wrapper">
       <section class="image">
-        <img src="./src/images/illustration-sign-up-mobile.svg" alt="" />
+        <picture>
+          <source
+            srcset="/src/images/illustration-sign-up-desktop.svg"
+            media="(min-width:1024p)"
+          />
+          <source
+            srcset="/src/images/illustration-sign-up-tablet.svg"
+            media="(min-width:768px)"
+          />
+          <img src="./src/images/illustration-sign-up-mobile.svg" alt="" />
+        </picture>
       </section>
       <section class="hero">
-        <h1 class="title">Stay updated!</h1>
-        <div>
-          <h2>Join 60,000+ product managers receiving monthly updates on:</h2>
+        <h1 class="title text-bold">Stay updated!</h1>
+        <div class="hero__details">
+          <h2 class="hero__subtitle">
+            Join 60,000+ product managers receiving monthly updates on:
+          </h2>
           <ul class="list">
             <li>
               <img src="./src/images/icon-list.svg" alt="icon-list" />
@@ -36,17 +48,29 @@
             </li>
           </ul>
         </div>
-        <section class="article__form">
-          <form id="form">
-            <div>
-              <label for="email">Email address</label>
-              <input type="email" name="email" id="email" />
-              <span class="error" id="email-error" aria-live="polite"></span>
-            </div>
-            <button type="submit">Subscribe to monthly newsletter</button>
-            <p id="success" class="success" aria-live="polite"></p>
-          </form>
-        </section>
+        <form id="form" class="newsletter-from">
+          <div class="newsletter-form__field">
+            <label for="email" class="newsletter-form__label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="newsletter-form__input"
+              placeholder="email@company.com"
+            />
+            <span class="error" id="email-error" aria-live="polite"></span>
+          </div>
+          <button class="newsletter-form__btn" type="submit">
+            Subscribe to monthly newsletter
+          </button>
+          <p
+            id="success"
+            class="newsletter-form__success"
+            aria-live="polite"
+          ></p>
+        </form>
       </section>
     </main>
     <script type="module" src="/src/main.js"></script>
