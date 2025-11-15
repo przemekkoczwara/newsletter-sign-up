@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32-DQjEQYWa.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Sign-up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-BlWqJFvv.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-RpC7hjMO.css">
+  </head>
+  <body>
+    <main id="wrapper" class="wrapper">
+      <section class="image">
+        <picture>
+          <source
+            srcset="/assets/illustration-sign-up-desktop-DX21DkyK.svg"
+            media="(min-width:1024px)"
+          />
+          <source
+            srcset="/assets/illustration-sign-up-tablet-CLCqFoBb.svg"
+            media="(min-width:768px)"
+          />
+          <img src="/assets/illustration-sign-up-mobile-DkrvVqU_.svg" alt="" />
+        </picture>
+      </section>
+      <section class="hero">
+        <h1 class="title text-bold">Stay updated!</h1>
+        <div class="hero__details">
+          <h2 class="hero__subtitle">
+            Join 60,000+ product managers receiving monthly updates on:
+          </h2>
+          <ul class="list">
+            <li>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='21'%20height='21'%20viewBox='0%200%2021%2021'%3e%3cg%20fill='none'%3e%3ccircle%20cx='10.5'%20cy='10.5'%20r='10.5'%20fill='%23FF6155'/%3e%3cpath%20stroke='%23FFF'%20stroke-width='2'%20d='M6%2011.381%208.735%2014%2015%208'/%3e%3c/g%3e%3c/svg%3e" alt="icon-list" />
+              Product discovery and building what matters
+            </li>
+            <li>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='21'%20height='21'%20viewBox='0%200%2021%2021'%3e%3cg%20fill='none'%3e%3ccircle%20cx='10.5'%20cy='10.5'%20r='10.5'%20fill='%23FF6155'/%3e%3cpath%20stroke='%23FFF'%20stroke-width='2'%20d='M6%2011.381%208.735%2014%2015%208'/%3e%3c/g%3e%3c/svg%3e" alt="icon-list" />
+              Measuring to ensure updates are a success
+            </li>
+            <li>
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='21'%20height='21'%20viewBox='0%200%2021%2021'%3e%3cg%20fill='none'%3e%3ccircle%20cx='10.5'%20cy='10.5'%20r='10.5'%20fill='%23FF6155'/%3e%3cpath%20stroke='%23FFF'%20stroke-width='2'%20d='M6%2011.381%208.735%2014%2015%208'/%3e%3c/g%3e%3c/svg%3e" alt="icon-list" />
+              And much more!
+            </li>
+          </ul>
+        </div>
+        <form id="form" class="newsletter-form" novalidate>
+          <div class="newsletter-form__field">
+            <div class="newsletter-form__group">
+              <label for="email" class="newsletter-form__label"
+                >Email address</label
+              >
+              <span class="error text-bold" id="email-error" aria-live="polite"
+                >Valid email required</span
+              >
+            </div>
+            <input
+              type="email"
+              name="email-input"
+              id="email-input"
+              class="newsletter-form__input"
+              placeholder="ash@loremcompany.com"
+            />
+          </div>
+          <button id="btn-submit" class="newsletter-form__btn" type="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </section>
+    </main>
+    <section id="success" class="success__message" aria-live="polite">
+      <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%3e%3cdefs%3e%3clinearGradient%20id='a'%20x1='100%25'%20x2='0%25'%20y1='0%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FF6A3A'/%3e%3cstop%20offset='100%25'%20stop-color='%23FF527B'/%3e%3c/linearGradient%3e%3c/defs%3e%3cg%20fill='none'%3e%3ccircle%20cx='32'%20cy='32'%20r='32'%20fill='url(%23a)'/%3e%3cpath%20stroke='%23FFF'%20stroke-width='4'%20d='m18.286%2034.686%208.334%207.98%2019.094-18.285'/%3e%3c/g%3e%3c/svg%3e" alt="icon-success" />
+      <h3 class="success__message-title">Thanks for subscribing!</h3>
+      <p class="success__message-text">
+        A confirmation email has been sent to
+        <strong>ash@loremcompany.com.</strong> Please open it and click the
+        button inside to confirm your subscription.
+      </p>
+      <button class="dismiss__btn text-bold btn-mobile" type="submit">
+        Dismiss message
+      </button>
+    </section>
+  </body>
+</html>
