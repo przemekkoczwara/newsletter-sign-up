@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <main class="wrapper">
+    <main id="wrapper" class="wrapper">
       <section class="image">
         <picture>
           <source
@@ -48,32 +48,31 @@
             </li>
           </ul>
         </div>
-        <form id="form" class="newsletter-form">
+        <form id="form" class="newsletter-form" novalidate>
           <div class="newsletter-form__field">
-            <label for="email" class="newsletter-form__label"
-              >Email address</label
-            >
+            <div class="newsletter-form__group">
+              <label for="email" class="newsletter-form__label"
+                >Email address</label
+              >
+              <span class="error text-bold" id="email-error" aria-live="polite"
+                >Valid email required</span
+              >
+            </div>
             <input
               type="email"
-              name="email"
-              id="email"
+              name="email-input"
+              id="email-input"
               class="newsletter-form__input"
-              placeholder="email@company.com"
+              placeholder="ash@loremcompany.com"
             />
-            <span class="error" id="email-error" aria-live="polite"></span>
           </div>
-          <button class="newsletter-form__btn" type="submit">
+          <button id="btn-submit" class="newsletter-form__btn" type="submit">
             Subscribe to monthly newsletter
           </button>
-          <p
-            id="success"
-            class="newsletter-form__success"
-            aria-live="polite"
-          ></p>
         </form>
       </section>
     </main>
-    <section class="success__message">
+    <section id="success" class="success__message" aria-live="polite">
       <img src="./src/images/icon-success.svg" alt="icon-success" />
       <h3 class="success__message-title">Thanks for subscribing!</h3>
       <p class="success__message-text">
@@ -81,7 +80,7 @@
         <strong>ash@loremcompany.com.</strong> Please open it and click the
         button inside to confirm your subscription.
       </p>
-      <button class="success__message-btn text-bold" type="submit">
+      <button class="dismiss__btn text-bold btn-mobile" type="submit">
         Dismiss message
       </button>
     </section>

@@ -11,6 +11,9 @@ body {
     height: 100vh;
     margin: 100px auto;
   }
+  @include mix.desktop {
+    height: 100vh;
+  }
 }
 
 .wrapper {
@@ -98,6 +101,11 @@ body {
   &__field {
     margin-bottom: vars.$spacing-24;
   }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+  }
   &__label {
     font-size: vars.$size-12;
     font-weight: vars.$font-weight-700;
@@ -109,6 +117,7 @@ body {
     border-radius: vars.$radius-8;
     outline-color: vars.$grey;
     margin-top: vars.$spacing-8;
+    color: vars.$blue-800;
 
     &::placeholder {
       color: vars.$grey;
@@ -124,6 +133,11 @@ body {
     font-weight: vars.$font-weight-700;
     border-radius: vars.$spacing-8;
     width: 100%;
+
+    @include mix.desktop {
+      background: vars.$linear-gradient;
+      border: none;
+    }
   }
 }
 
@@ -149,18 +163,31 @@ body {
   &-text {
     line-height: vars.$line-height-large;
   }
-  .success__message-btn {
+  .dismiss__btn {
     color: vars.$white;
-    background-color: red;
+    background: vars.$linear-gradient;
     width: 100%;
     padding: 16px;
     border-radius: vars.$radius-8;
-    background-color: vars.$blue-800;
+    border: none;
     line-height: vars.$line-height-large;
     margin-top: vars.$spacing-100;
 
     @include mix.tablet {
       margin-top: vars.$spacing-32;
+      background: vars.$blue-800;
     }
   }
+}
+.error-msg {
+  color: vars.$red;
+  background-color: vars.$red-100;
+  border: 2px solid vars.$red;
+}
+
+.error {
+  display: none;
+  color: vars.$red;
+  font-size: vars.$size-12;
+  line-height: vars.$line-height-large;
 }
